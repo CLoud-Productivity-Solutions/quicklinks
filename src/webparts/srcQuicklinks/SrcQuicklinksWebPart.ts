@@ -31,7 +31,7 @@ export default class SrcQuicklinksWebPart extends BaseClientSideWebPart<ISrcQuic
               flex-wrap: wrap;
               text-align: left;
               box-sizing: border-box; 
-              border: 1px solid rgb(0, 0, 0);
+              /**border: 1px solid rgb(0, 0, 0);**/
               width: auto;
               border-radius:4px;
               outline: 0px;
