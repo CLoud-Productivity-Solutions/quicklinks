@@ -2,9 +2,9 @@
 
 ## Summary
 
-[Short summary on functionality and used technologies.]
+[Replace with a short summary of the functionality and technologies used.]
 
-[Picture of the solution in action, if possible]
+[![Solution in Action](link-to-image.png)](link-to-image.png)
 
 ## Used SharePoint Framework Version
 
@@ -23,9 +23,9 @@
 
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution       | Author(s)                                            |
+| -------------- | ---------------------------------------------------- |
+| folder name    | Author details (name, company, [twitter alias with link](https://twitter.com/your-twitter-alias)) |
 
 ## Version history
 
@@ -42,26 +42,28 @@
 
 ## Minimal Path to Awesome
 
-- Install Node.js v16.20.2
-- In the command-line run:
-  - **npm install gulp-cli --global**
-  - **npm install yo --global**
-  - **npm install @microsoft/generator-sharepoint --global**
+1. Install Node.js v16.20.2
+2. In the command-line run:
+   - `npm install gulp-cli --global`
+   - `npm install yo --global`
+   - `npm install @microsoft/generator-sharepoint --global`
 
-- Clone this repository
-- Ensure that you are at the solution folder
-- In the command-line run:
-  - **npm install**
-  - **gulp trust-dev-cert** to generate a certificate
+3. Clone this repository
+4. Ensure that you are at the solution folder
+5. In the command-line run:
+   - `npm install`
+   - `gulp trust-dev-cert` to generate a certificate
    
-- To make and preview changes:
-  - **gulp serve**
-  - To preview changes, copy the query string generated in the command-line and append it to https://ugandairlinesug.sharepoint.com to have a complete URL such as https://ugandairlinesug.sharepoint.com/?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js
+6. To make and preview changes:
+   - `gulp serve`
+   - To preview changes, copy the query string generated in the command-line and append it to [https://ugandairlinesug.sharepoint.com](https://ugandairlinesug.sharepoint.com) to have a complete URL such as [https://ugandairlinesug.sharepoint.com/?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js](https://ugandairlinesug.sharepoint.com/?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js)
 
-- To commit the changes:
-  - **gulp package-solution --ship**
-  - Upload the ./sharepoint/solution/quicklinks.sppkg to SharePoint admin
-  - You should be able to view the changes in 6 to 12 hours
+7. To commit the changes:
+   - press ctrl-C in the node running `gulp serve` to stop serving
+   - `gulp bundle`
+   - `gulp package-solution`
+   - Upload the `./sharepoint/solution/quicklinks.sppkg` to SharePoint admin
+   - You should be able to view the changes in 6 to 12 hours
 
 ## Features
 
